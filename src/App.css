@@ -1,0 +1,450 @@
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.loginPage {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("https://miro.medium.com/max/1400/1*5lyavS59mazOFnb55Z6znQ.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginForm {
+  background: rgba(0, 0, 0, 0.6);
+  width: 470px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.LoginForm input {
+  background-color: #333333;
+  border: none;
+  color: white;
+}
+
+.LoginForm ::placeholder {
+  color: #ced4da;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginBtn {
+  background-color: #e50914;
+  border: 1px solid #e50914;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.loginBtn:hover {
+  transform: scale(1.05);
+}
+
+/* homePage */
+
+.homePage {
+  background-color: #141414;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -100px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.video-container video {
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-left: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  mix-blend-mode: normal;
+}
+
+nav span {
+  color: white !important;
+  background: none !important;
+}
+
+nav span:hover {
+  cursor: pointer;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.logOut {
+  border-color: #e50914;
+  color: white;
+  border: none;
+  background-color: #e50914;
+  padding-left: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 20px;
+}
+
+.logOut:hover {
+  background-color: #ba1926;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 90%
+  );
+}
+
+.watchBtn {
+  color: black;
+  border: none;
+  background-color: #ffffff;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  margin-right: 5px;
+  font-weight: 800;
+}
+
+.watchBtn:hover {
+  background-color: #ced4da;
+}
+
+.moviesBtn {
+  border-color: #e50914;
+  color: white;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  margin-left: 5px;
+}
+
+.moviesBtn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.movies {
+  width: 100vw;
+  padding: 75px;
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  row-gap: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.movie {
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  color: whitesmoke;
+  padding-bottom: 25px;
+}
+
+.movie img {
+  height: 350px;
+  width: 350px;
+  padding-bottom: 10px;
+}
+
+.movie:hover {
+  transform: scale(1.1);
+  transition: all 0.8s ease-in-out;
+}
+
+.editBtn {
+  color: black;
+  border: none;
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 20px;
+  margin-right: 5px;
+  font-weight: 800;
+}
+
+.deleteBtn {
+  border-color: #e50914;
+  color: white;
+  border: none;
+  background-color: #e50914;
+  padding-left: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 20px;
+}
+
+.editBtn:hover,
+.addMovieBtn:hover,
+.allMoviesBtn:hover,
+.allMembersBtn:hover,
+.addMemberBtn:hover,
+.subNewMovie:hover,
+#addBtn:hover,
+#cancelBtn:hover,
+#searchBtn:hover {
+  background-color: #ced4da;
+}
+
+.deleteBtn:hover {
+  background-color: #ba1926;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: flex-end;
+}
+
+.searchBar input {
+  width: 300px;
+}
+
+.searchBar input {
+  background: none;
+  color: #ced4da9a;
+}
+
+.searchBar input::placeholder {
+  color: rgba(181, 179, 179, 0.411);
+}
+
+.btns {
+  padding-left: 100px;
+}
+
+.allMoviesBtn,
+.addMovieBtn,
+.allMembersBtn,
+.addMemberBtn,
+.subNewMovie,
+#addBtn,
+#cancelBtn,
+#searchBtn {
+  color: black;
+  border: none;
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 20px;
+  margin-right: 5px;
+  font-weight: 800;
+}
+
+.addMovie,
+.editMovie,
+.editMember,
+.addMember {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  padding: 50px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.addMovie input,
+.editMovie input,
+.editMember input,
+.addMember input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  color: rgb(194, 194, 194);
+}
+
+label {
+  color: rgb(234, 234, 234) !important;
+}
+
+.memberDiv div {
+
+   color: white;
+}
+
+.subscriptionsPage {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 50px;
+  align-items: center;
+}
+
+.memberDiv {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: #1c1c1c;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 30px;
+}
+
+.memberDiv:hover {
+  transform: translateY(-8px);
+  webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.test {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.moviesWatched {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#moviesWatched {
+  display: flex;
+  flex-direction: column;
+}
+
+.subsWatched {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  width: 300px;
+  margin: 0 auto;
+  background-color: #1c1c1c;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subsWatched a,
+.moviesWatched a {
+  color: aquamarine;
+}
+
+.subsWatched a:hover,
+.moviesWatched a:hover {
+  color: rgb(0, 200, 255);
+}
+
+.subscribeDiv {
+  background-color: #ba1926;
+  margin-right: 25px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  animation: fadein 3s;
+  margin-top: 5px;
+  padding: 25px;
+}
+
+.subNewMovie {
+  margin-right: 30px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.specificMovie {
+  width: 100vw;
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.specificMovieCard {
+  margin: 8px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  color: whitesmoke;
+  display: flex;
+}
+
+.specificMovie img {
+  width: 40vw;
+  height: 75vh;
+}
+
+.specificContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+}
+
+.specificContent h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: aquamarine;
+}
+
+.specificContent span {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.childDiv {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
